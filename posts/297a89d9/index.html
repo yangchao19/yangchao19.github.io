@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content=#58b77a>
+  <title>Python学习笔记 | blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="yang chao">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <script id="hexo-configurations">
+  var CONFIG = {
+    root: '/',
+    theme: 'lx',
+    version: '0.4.3',
+    localsearch:{
+      "enable": false,
+      "trigger": "auto",
+      "top_n_per_article": 1,
+      "unescape": false,
+      "preload": false
+      },
+    path: 'null'
+  };
+</script>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/css/main.min.css">
+  
+  <style type="text/css">
+    pre,
+    code {
+      font-family: 'Fira Code', monospace;
+    }
+    html {
+      font-family: sans-serif;
+    }
+    body {
+      font-family: sans-serif;
+    }
+    h1, h2, h3, h4, h5, figure {
+      font-family: sans-serif;
+    }
+    .menu-container{
+      font-family: sans-serif;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/js/jquery.jside.menu.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	$(".menu-container").jSideMenu({
+	    jSidePosition: "position-right",
+	    jSideSticky: true,
+	    jSideSkin: "",
+	     });
+	}); 
+	</script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+<meta name="generator" content="Hexo 6.0.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+</head>
+<body>
+<div class="single">
+
+<div id="page">
+<div class="header">
+  <div id="lx-aside" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/post_cover.min.jpeg)" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+      
+      <div class="page-title">
+        <div class="avatar"><a href="/"><img src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/avatar.min.jpeg" alt="yang chao"></a></div>
+        <span>2022-03-03</span>
+        <h2>Python学习笔记</h2>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="lx-main-content">
+  <div class="lx-post">
+    <div class="lx-entry padding">
+      <div>
+        <h1 id="第九章-类"><a href="#第九章-类" class="headerlink" title="第九章 类"></a>第九章 类</h1><h2 id="9-1-创建类："><a href="#9-1-创建类：" class="headerlink" title="9.1.创建类："></a>9.1.创建类：</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">sit</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f"<span class="subst">{self.name}</span> is now sitting."</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">roll_over</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f"<span class="subst">{self.name}</span> rolled over!"</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Python中首字母大写的名称指的是类。类中的函数称为方法。</p>
+<p>__init__是一个特殊的方法,每当你根据Dog创建新实力时，Python都会自动运行它。<br>为何必须在方法定义中包含形参 self ？<br>因为python调用这个方法创建Dog实例时，将自动传入实参self。<br>每个与实例相关的方法调用都自动传递实参self，它是一个指向实例本身的引用，让实例能够访问类中的属性和方法。<br>以 self 为前缀的变量可以供类中的所有方法使用。</p>
+<span id="more"></span>
+
+<h2 id="9-2-继承"><a href="#9-2-继承" class="headerlink" title="9.2.继承:"></a>9.2.继承:</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Car</span>:</span><br><span class="line">    <span class="keyword">def</span>  <span class="title function_">__init__</span>(<span class="params">self,make,model,year</span>):</span><br><span class="line">        self.male = make</span><br><span class="line">        self.model = model</span><br><span class="line">        self.year = year</span><br><span class="line">        self.odometer_reading = <span class="number">0</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_descriptive_name</span>(<span class="params">self</span>):</span><br><span class="line">        long_name = <span class="string">f"<span class="subst">{self.year}</span> <span class="subst">{self.make}</span> <span class="subst">{self.model}</span>"</span></span><br><span class="line">        <span class="keyword">return</span> long_name.title()</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ElectricCar</span>(<span class="title class_ inherited__">Car</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,make,model,year</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__(make,model,year)</span><br><span class="line">my_tesla = ElectricCar(<span class="string">'tesla'</span>,<span class="string">'model s'</span>,<span class="number">2019</span>)</span><br><span class="line"><span class="built_in">print</span>(my_tesla.get_descriptive_name())</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Car 是 ElectricCar 的父类，创建子类时，父类必须包含在当前文件内，且位于子类前面。定义子类时必须在圆括号里指定父类的名称。</p>
+<p>super() 是一个特殊函数，让你能够调用父类的方法。</p>
+<p>在super() 函数下方可以定义子类的新属性和新方法。</p>
+<h2 id="9-3-导入类"><a href="#9-3-导入类" class="headerlink" title="9.3.导入类"></a>9.3.导入类</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#在一个文件中导入一个类:</span></span><br><span class="line"><span class="keyword">from</span> <span class="string">'文件名'</span> <span class="keyword">import</span> <span class="string">'类的名称'</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">#在一个模块中导入多个类:</span></span><br><span class="line"><span class="keyword">from</span> <span class="string">'文件名'</span> <span class="keyword">import</span> <span class="string">'类1的名称'</span>,<span class="string">'类2的名称'</span>,<span class="string">'类3的名称'</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">#导入一个模块:</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'模块名/文件名'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#使用别名:</span></span><br><span class="line"><span class="keyword">from</span> <span class="string">'文件名'</span> <span class="keyword">import</span> <span class="string">'类的名称'</span> <span class="keyword">as</span> <span class="string">'别名'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="9-4-Python标准库"><a href="#9-4-Python标准库" class="headerlink" title="9.4.Python标准库"></a>9.4.Python标准库</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#randint()生成一个位于1和6之间的随机数</span></span><br><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randint</span><br><span class="line">randint(<span class="number">1</span>,<span class="number">6</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#choice()它将列表或元组作为参数，随机返回其中的一个元素</span></span><br><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> choice</span><br><span class="line">players = [<span class="string">'charles'</span>,<span class="string">'martina'</span>,<span class="string">'michael'</span>,<span class="string">'florence'</span>,<span class="string">'eli'</span>]</span><br><span class="line">first_up = choice(players)</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h1 id="第十章-文件和异常"><a href="#第十章-文件和异常" class="headerlink" title="第十章 文件和异常"></a>第十章 文件和异常</h1><h2 id="10-1从文件中读取数据"><a href="#10-1从文件中读取数据" class="headerlink" title="10.1从文件中读取数据"></a>10.1从文件中读取数据</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#打开python_work文件目录中的其他文件</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'filename.txt'</span>) <span class="keyword">as</span> file_object:</span><br><span class="line"></span><br><span class="line"><span class="comment">#在python_work下的文件夹text_files中查找特定的.txt文件</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'text_files/filename.txt'</span>) <span class="keyword">as</span> file_object:</span><br><span class="line"></span><br><span class="line"><span class="comment">#根据绝对路径打开文件，此时使用的是(/)而不是(\)</span></span><br><span class="line">file_path = <span class="string">'/home/other_files/text_files/filename.txt'</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file_path) <span class="keyword">as</span> file_object:</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>不同的读取方式：</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">filename = <span class="string">'pi_digit.txt'</span></span><br><span class="line"><span class="comment">#使用 read() 读取这个文件的全部内容，并将其作为一个长长的字符串赋值给变量</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename) <span class="keyword">as</span> fo:</span><br><span class="line">    contents = fo.read()</span><br><span class="line"><span class="built_in">print</span>(contents)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#逐行读取，对文件使用 for 循环</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename) <span class="keyword">as</span> fo:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> fo:</span><br><span class="line">        <span class="built_in">print</span>(line.rstrip())<span class="comment">#print()会加上换行符，使用rstrip()删除空白</span></span><br><span class="line"></span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line"><span class="comment">#创建一个包含文件各行内容的列表，使用readlines()函数</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename) <span class="keyword">as</span> fo:</span><br><span class="line">    lines = fo.readlines()</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">    <span class="built_in">print</span>(line.rstrip())</span><br><span class="line"><span class="comment">#readlines()从文件中读取每一行，并将其存储到一个列表中。将列表赋值给lines，lines中的每个元素对应文件中的一行。</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>​                </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover next lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/footer-l.min.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="#">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3>No newer post</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover prev lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/footer-r.min.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/posts/3897350f/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>机器学习学习笔记</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+</div>
+<div class="comment"><div id="comments"></div></div>
+<footer>
+  <div>
+  Copyright &copy; 2022.<a href="/">blog</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.js.org" target="_blank">Lx</a><br>
+  </div>
+</footer>
+
+</div>
+
+<button class="hamburger hamburger--arrow-r" type="button" title="menu">
+    <div class="hamburger-box">
+      <div class="hamburger-inner"></div>
+    </div>
+</button>
+<div class="menu visibility">
+  <div class="menu-head">
+    <span class="layer">
+      <div class="col">
+        <div class="row for-pic">
+          <div class="profile-pic">
+            <a href="/"><img src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/avatar.min.jpeg" alt="yang chao"/></a>
+          </div>
+        </div>
+        <div class="row for-name">
+          <p>yang chao</p>
+          <span class="tagline">Hello, World!</span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <nav class="menu-container">
+  <ul class="menu-items">
+    <li><a href="/"><i class="fa fa-home fa-fw"></i>Home</a></li>
+    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+    
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-bookmark fa-fw"></i>Pages</span>
+        <ul>
+          <li><a href="/guestbook/">Guestbook</a></li>
+        <li><a href="/about/">About</a></li>
+        </ul>
+    </li>
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-link fa-fw"></i>Friends</span>
+        <ul>
+          <li> <a href="https://lx.js.org" target="_blank">Theme-Lx</a></li>
+        </ul>
+    </li>
+  </ul>
+  </nav>
+</div>
+
+<div class="gototop js-top">
+  <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/js/jquery.easing.min.js"></script>
+<script>
+(function () {
+	"use strict";
+	var goToTop = function() {
+		$(".js-gotop").on("click", function(event){
+			event.preventDefault();
+			$("html, body").animate({
+				scrollTop: $("html").offset().top
+			}, 500, "easeInOutExpo");
+			return false;
+		});
+		$(window).scroll(function(){
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$(".js-top").addClass("active");
+			} else {
+				$(".js-top").removeClass("active");
+			}
+		});
+	};
+	$(function(){
+		goToTop();
+	});
+}());
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.16/dist/Valine.min.js"></script>
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'CxxDHGBYoSnkvcbzpkHy8DuN-gzGzoHsz',
+    appKey: 'ouuYboaSJS0Gfnrzo4zNtlS3',
+    placeholder: 'Say something.',
+    avatar: 'identicon',
+    meta: guest,
+    pageSize: '10' || 10,
+    lang: 'zh-CN' || 'zh-cn'
+  });
+</script>
+
+</body>
+</html>
