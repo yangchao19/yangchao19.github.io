@@ -61,9 +61,9 @@
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
 </head>
 <body>
 <div id="page">
@@ -87,9 +87,34 @@
 
   <div class="lx-entry padding">
     <div>
+      <h2 class="title"><a href="/posts/54366/">计网学习笔记</a></h2>
+      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2022-03-05</span>
+      <p><h1 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h1><h2 id="数据交换方式："><a href="#数据交换方式：" class="headerlink" title="数据交换方式："></a>数据交换方式：</h2><p>1.电路交换（打电话）：申请，占用，释放</p>
+<p>2.报文交换（不做分组）：交换时间长</p>
+<p>3.分组交换：(不占线)</p>
+<h2 id="作用范围："><a href="#作用范围：" class="headerlink" title="作用范围："></a>作用范围：</h2><p>1.广域网WAN：花钱买服务</p>
+<p>2.局域网LAN：自己买设备 自己维护 宽带固定 距离近</p>
+<p>3.城域网MAN</p>
+<p>4.个人区域PAN</p>
+<h2 id="拓扑结构："><a href="#拓扑结构：" class="headerlink" title="拓扑结构："></a>拓扑结构：</h2><p>总线型 环型 星型 树型 网状</p>
+<h2 id="工作方式："><a href="#工作方式：" class="headerlink" title="工作方式："></a>工作方式：</h2><p>资源子网 通信子网 接入网</p>
+<h2 id="计算机网络的性能："><a href="#计算机网络的性能：" class="headerlink" title="计算机网络的性能："></a>计算机网络的性能：</h2><p>速率：主机在数据信道上的传送数据位数的速率</p>
+<p>宽带：网卡最高支持的速率</p>
+<p>吞吐量：单位时间通过的所有信息量</p>
+<p>时延：发送时延 传播时延 处理时延 排队时延</p>
+<p>时延带宽积：时延带宽积 = 传播时延 * 带宽</p>
+<p>往返时间：从发送方发送数据开始，到接收方收到数据的时间</p>
+<p>利用率：信道利用率 = 有数据通过的时间/（（有+无）数据通过时间）</p>
+<p>​                网络利用率：信道利用率加权平均值</p>
+</p>
+      <div class="post-button"><a class="btn" href="/posts/54366/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
+    </div>
+  </div>
+  <div class="lx-entry padding">
+    <div>
       <h2 class="title"><a href="/posts/297a89d9/">Python学习笔记</a></h2>
       <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2022-03-03</span>
-      <p><h1 id="第九章-类"><a href="#第九章-类" class="headerlink" title="第九章 类"></a>第九章 类</h1><h2 id="9-1-创建类："><a href="#9-1-创建类：" class="headerlink" title="9.1.创建类："></a>9.1.创建类：</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">sit</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f"<span class="subst">{self.name}</span> is now sitting."</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">roll_over</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f"<span class="subst">{self.name}</span> rolled over!"</span>)</span><br></pre></td></tr></tbody></table></figure>
+      <p><h1 id="第一部分-基础知识"><a href="#第一部分-基础知识" class="headerlink" title="第一部分 基础知识"></a>第一部分 基础知识</h1><h2 id="第九章-类"><a href="#第九章-类" class="headerlink" title="第九章 类"></a>第九章 类</h2><h3 id="9-1-创建类："><a href="#9-1-创建类：" class="headerlink" title="9.1.创建类："></a>9.1.创建类：</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">sit</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f"<span class="subst">{self.name}</span> is now sitting."</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">roll_over</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f"<span class="subst">{self.name}</span> rolled over!"</span>)</span><br></pre></td></tr></tbody></table></figure>
 
 <p>Python中首字母大写的名称指的是类。类中的函数称为方法。</p>
 <p>__init__是一个特殊的方法,每当你根据Dog创建新实力时，Python都会自动运行它。<br>为何必须在方法定义中包含形参 self ？<br>因为python调用这个方法创建Dog实例时，将自动传入实参self。<br>每个与实例相关的方法调用都自动传递实参self，它是一个指向实例本身的引用，让实例能够访问类中的属性和方法。<br>以 self 为前缀的变量可以供类中的所有方法使用。</p></p>
@@ -105,15 +130,6 @@
 <p><strong>归纳</strong>和<strong>演绎</strong>：前者是从特殊到一般的“泛化”过程，即从具体事物归结出一般性规律；后者则是从一般到特殊的“特化”，即从基础原理推演出具体状况。</p>
 <p><strong>版本空间</strong>：可能有多个假设与训练集一致，即存在一个与训练集一致的“假设集合”，称之为“版本空间”。</p></p>
       <div class="post-button"><a class="btn" href="/posts/3897350f/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
-    </div>
-  </div>
-  <div class="lx-entry padding">
-    <div>
-      <h2 class="title"><a href="/posts/e53fb0b9/">my-first-blog</a></h2>
-      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2022-02-27</span>
-      <p><p>这是我的第一个博客</p>
-</p>
-      <div class="post-button"><a class="btn" href="/posts/e53fb0b9/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
     </div>
   </div>
 
