@@ -87,7 +87,9 @@
   <div class="lx-post">
     <div class="lx-entry padding">
       <div>
-        <p><strong>numpy</strong></p>
+        <span id="more"></span>
+
+<p><strong>numpy</strong></p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">np.mean(a, axis, dtype, out，keepdims )</span><br><span class="line">	a为m*n矩阵</span><br><span class="line">	axis 不设置值，对 m*n 个数求均值，返回一个实数</span><br><span class="line">	axis = <span class="number">0</span>：压缩行，对各列求均值，返回 <span class="number">1</span>* n 矩阵</span><br><span class="line">	axis = <span class="number">1</span>：压缩列，对各行求均值，返回 m *<span class="number">1</span> 矩阵</span><br><span class="line">np.std(a,axis,dype,out,keepdims)</span><br><span class="line">	axis = <span class="literal">None</span> 表示全局标准差</span><br><span class="line">	axis = <span class="number">0</span> 表示每一列标准差</span><br><span class="line">	axis = <span class="number">1</span> 表示每一行标准差</span><br><span class="line">[m,n] = np.shape(a）</span><br><span class="line">	返回矩阵的大小</span><br><span class="line">c = array([[<span class="number">1</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">1</span>,<span class="number">3</span>],[<span class="number">1</span>,<span class="number">4</span>]])  </span><br><span class="line">c.shape  </span><br><span class="line"><span class="comment">#(4, 2)  </span></span><br><span class="line">c.shape[<span class="number">0</span>]  </span><br><span class="line"><span class="comment">#4  </span></span><br><span class="line">c.shape[<span class="number">1</span>]  </span><br><span class="line"><span class="comment">#2</span></span><br><span class="line">                 </span><br><span class="line">a = np.zeros((m,n))</span><br><span class="line">	返回元素全为<span class="number">0</span>，大小为m*n的矩阵</span><br><span class="line">[a,b] = np.polyfit(x,y,deg)</span><br><span class="line">	y = a*x**deg+b 线性回归</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></tbody></table></figure>
 
 <p><strong>excel处理</strong></p>
@@ -160,18 +162,18 @@
   </div>
   <nav class="menu-container">
   <ul class="menu-items">
-    <li><a href="/"><i class="fa fa-home fa-fw"></i>首页</a></li>
-    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+    <li><a href="/"><i class="fa fa-home fa-fw"></i>Home</a></li>
+    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
     
     <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-bookmark fa-fw"></i>页面</span>
+      <i class="fa fa-bookmark fa-fw"></i>Pages</span>
         <ul>
           <li><a href="/guestbook/">Guestbook</a></li>
         <li><a href="/about/">About</a></li>
         </ul>
     </li>
     <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-link fa-fw"></i>友链</span>
+      <i class="fa fa-link fa-fw"></i>Friends</span>
         <ul>
           <li> <a href="https://lx.js.org" target="_blank">Theme-Lx</a></li>
         </ul>

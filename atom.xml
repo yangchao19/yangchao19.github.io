@@ -6,7 +6,7 @@
   <link href="http://tomotoes.com/atom.xml" rel="self"/>
   
   <link href="http://tomotoes.com/"/>
-  <updated>2022-06-22T07:30:53.703Z</updated>
+  <updated>2022-06-28T06:20:09.178Z</updated>
   <id>http://tomotoes.com/</id>
   
   <author>
@@ -21,8 +21,16 @@
     <link href="http://tomotoes.com/posts/33893/"/>
     <id>http://tomotoes.com/posts/33893/</id>
     <published>2022-06-22T07:30:53.000Z</published>
-    <updated>2022-06-22T07:30:53.703Z</updated>
+    <updated>2022-06-28T06:20:09.178Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span</summary>
+        
+      
     
     
     
@@ -34,14 +42,16 @@
     <link href="http://tomotoes.com/posts/30986/"/>
     <id>http://tomotoes.com/posts/30986/</id>
     <published>2022-06-06T11:32:30.000Z</published>
-    <updated>2022-06-06T11:35:01.466Z</updated>
+    <updated>2022-06-28T06:20:21.026Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;1-控制小数点后面几位&quot;&gt;&lt;a href=&quot;#1-控制小数点后面几位&quot; class=&quot;headerlink&quot; title=&quot;1.控制小数点后面几位&quot;&gt;&lt;/a&gt;1.控制小数点后面几位&lt;/h1&gt;&lt;figure class=&quot;highlight</summary>
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;h1 id=&quot;1-控制小数点后面几位&quot;&gt;&lt;a href=&quot;#1-控制小数点后面几位&quot; class=&quot;headerlink&quot; title=&quot;1.控制小数点后面几位&quot;&gt;&lt;/a&gt;1.控制小数点后面几位&lt;/h1&gt;&lt;figure</summary>
         
       
     
@@ -55,14 +65,16 @@
     <link href="http://tomotoes.com/posts/21586/"/>
     <id>http://tomotoes.com/posts/21586/</id>
     <published>2022-04-23T02:49:01.000Z</published>
-    <updated>2022-04-24T03:15:03.422Z</updated>
+    <updated>2022-06-28T06:19:52.636Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;1-矩阵的基本语法&quot;&gt;&lt;a href=&quot;#1-矩阵的基本语法&quot; class=&quot;headerlink&quot; title=&quot;1.矩阵的基本语法&quot;&gt;&lt;/a&gt;1.矩阵的基本语法&lt;/h1&gt;&lt;figure class=&quot;highlight</summary>
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;h1 id=&quot;1-矩阵的基本语法&quot;&gt;&lt;a href=&quot;#1-矩阵的基本语法&quot; class=&quot;headerlink&quot; title=&quot;1.矩阵的基本语法&quot;&gt;&lt;/a&gt;1.矩阵的基本语法&lt;/h1&gt;&lt;figure</summary>
         
       
     
@@ -76,14 +88,16 @@
     <link href="http://tomotoes.com/posts/28202/"/>
     <id>http://tomotoes.com/posts/28202/</id>
     <published>2022-04-19T02:38:16.000Z</published>
-    <updated>2022-06-06T11:53:55.041Z</updated>
+    <updated>2022-06-28T06:20:15.264Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;&lt;strong&gt;numpy&lt;/strong&gt;&lt;/p&gt;
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;p&gt;&lt;strong&gt;numpy&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
         
       
@@ -98,14 +112,16 @@
     <link href="http://tomotoes.com/posts/54366/"/>
     <id>http://tomotoes.com/posts/54366/</id>
     <published>2022-03-05T00:41:13.000Z</published>
-    <updated>2022-06-22T03:13:45.691Z</updated>
+    <updated>2022-06-28T06:19:47.002Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;第一章-概述&quot;&gt;&lt;a href=&quot;#第一章-概述&quot; class=&quot;headerlink&quot; title=&quot;第一章 概述&quot;&gt;&lt;/a&gt;第一章 概述&lt;/h1&gt;&lt;h2 id=&quot;1-1-数据交换方式：&quot;&gt;&lt;a href=&quot;#1-1-数据交换方式：&quot;</summary>
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;h1 id=&quot;第一章-概述&quot;&gt;&lt;a href=&quot;#第一章-概述&quot; class=&quot;headerlink&quot; title=&quot;第一章 概述&quot;&gt;&lt;/a&gt;第一章 概述&lt;/h1&gt;&lt;h2 id=&quot;1-1-数据交换方式：&quot;&gt;&lt;a</summary>
         
       
     
@@ -119,13 +135,18 @@
     <link href="http://tomotoes.com/posts/297a89d9/"/>
     <id>http://tomotoes.com/posts/297a89d9/</id>
     <published>2022-03-03T12:31:57.000Z</published>
-    <updated>2022-03-10T12:47:10.263Z</updated>
+    <updated>2022-06-28T06:19:24.897Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;第一部分-基础知识&quot;&gt;&lt;a href=&quot;#第一部分-基础知识&quot; class=&quot;headerlink&quot; title=&quot;第一部分 基础知识&quot;&gt;&lt;/a&gt;第一部分 基础知识&lt;/h1&gt;&lt;h2 id=&quot;第九章-类&quot;&gt;&lt;a href=&quot;#第九章-类&quot; class=&quot;headerlink&quot; title=&quot;第九章 类&quot;&gt;&lt;/a&gt;第九章 类&lt;/h2&gt;&lt;h3 id=&quot;9-1-创建类：&quot;&gt;&lt;a href=&quot;#9-1-创建类：&quot; class=&quot;headerlink&quot; title=&quot;9.1.创建类：&quot;&gt;&lt;/a&gt;9.1.创建类：&lt;/h3&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title class_&quot;&gt;Dog&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;__init__&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;self,name,age&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        self.name = name&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        self.age = age&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;sit&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;self&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;f&quot;&lt;span class=&quot;subst&quot;&gt;{self.name}&lt;/span&gt; is now sitting.&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title function_&quot;&gt;roll_over&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;self&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;f&quot;&lt;span class=&quot;subst&quot;&gt;{self.name}&lt;/span&gt; rolled over!&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
 
-&lt;p&gt;Python中首字母大写的名称指的是类。类中的函数称为方法。&lt;/p&gt;
-&lt;p&gt;__init__是一个特殊的方法,每当你根据Dog创建新实力时，Python都会自动运行它。&lt;br&gt;为何必须在方法定义中包含形参 self ？&lt;br&gt;因为python调用这个方法创建Dog实例时，将自动传入实参self。&lt;br&gt;每个与实例相关的方法调用都自动传递实参self，它是一个指向实例本身的引用，让实例能够访问类中的属性和方法。&lt;br&gt;以 self 为前缀的变量可以供类中的所有方法使用。&lt;/p&gt;</summary>
+&lt;h1 id=&quot;第一部分-基础知识&quot;&gt;&lt;a href=&quot;#第一部分-基础知识&quot; class=&quot;headerlink&quot; title=&quot;第一部分 基础知识&quot;&gt;&lt;/a&gt;第一部分 基础知识&lt;/h1&gt;&lt;h2 id=&quot;第九章-类&quot;&gt;&lt;a</summary>
+        
+      
     
     
     
@@ -137,13 +158,18 @@
     <link href="http://tomotoes.com/posts/3897350f/"/>
     <id>http://tomotoes.com/posts/3897350f/</id>
     <published>2022-02-28T06:32:59.000Z</published>
-    <updated>2022-03-07T12:30:34.676Z</updated>
+    <updated>2022-06-28T06:19:40.972Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;第一章-绪论&quot;&gt;&lt;a href=&quot;#第一章-绪论&quot; class=&quot;headerlink&quot; title=&quot;第一章 绪论&quot;&gt;&lt;/a&gt;第一章 绪论&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;机器学习&lt;/strong&gt;研究的主要内容是在计算机上从数据中产生“模型”的算法。即“学习算法”，通过学习算法，把数据提供给它，它能基于这些数据产生模型；在面对新的情况时，模型会给出判断。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;泛化能力&lt;/strong&gt;：学得模型适用于新样本的能力，称为“泛化能力”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;归纳&lt;/strong&gt;和&lt;strong&gt;演绎&lt;/strong&gt;：前者是从特殊到一般的“泛化”过程，即从具体事物归结出一般性规律；后者则是从一般到特殊的“特化”，即从基础原理推演出具体状况。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;版本空间&lt;/strong&gt;：可能有多个假设与训练集一致，即存在一个与训练集一致的“假设集合”，称之为“版本空间”。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;h1 id=&quot;第一章-绪论&quot;&gt;&lt;a href=&quot;#第一章-绪论&quot; class=&quot;headerlink&quot; title=&quot;第一章 绪论&quot;&gt;&lt;/a&gt;第一章</summary>
+        
+      
     
     
     
