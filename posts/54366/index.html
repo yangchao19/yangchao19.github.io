@@ -87,16 +87,16 @@
   <div class="lx-post">
     <div class="lx-entry padding">
       <div>
-        <h1 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h1><h2 id="数据交换方式："><a href="#数据交换方式：" class="headerlink" title="数据交换方式："></a>数据交换方式：</h2><p>1.电路交换（打电话）：申请，占用，释放</p>
+        <h1 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h1><h2 id="1-1-数据交换方式："><a href="#1-1-数据交换方式：" class="headerlink" title="1.1 数据交换方式："></a>1.1 数据交换方式：</h2><p>1.电路交换（打电话）：申请，占用，释放</p>
 <p>2.报文交换（不做分组）：交换时间长</p>
 <p>3.分组交换：(不占线)</p>
-<h2 id="作用范围："><a href="#作用范围：" class="headerlink" title="作用范围："></a>作用范围：</h2><p>1.广域网WAN：花钱买服务</p>
+<h2 id="1-2-作用范围："><a href="#1-2-作用范围：" class="headerlink" title="1.2 作用范围："></a>1.2 作用范围：</h2><p>1.广域网WAN：花钱买服务</p>
 <p>2.局域网LAN：自己买设备 自己维护 宽带固定 距离近</p>
 <p>3.城域网MAN</p>
 <p>4.个人区域PAN</p>
-<h2 id="拓扑结构："><a href="#拓扑结构：" class="headerlink" title="拓扑结构："></a>拓扑结构：</h2><p>总线型 环型 星型 树型 网状</p>
-<h2 id="工作方式："><a href="#工作方式：" class="headerlink" title="工作方式："></a>工作方式：</h2><p>资源子网 通信子网 接入网</p>
-<h2 id="计算机网络的性能："><a href="#计算机网络的性能：" class="headerlink" title="计算机网络的性能："></a>计算机网络的性能：</h2><p>速率：主机在数据信道上的传送数据位数的速率</p>
+<h2 id="1-3-拓扑结构："><a href="#1-3-拓扑结构：" class="headerlink" title="1.3 拓扑结构："></a>1.3 拓扑结构：</h2><p>总线型 环型 星型 树型 网状</p>
+<h2 id="1-4-工作方式："><a href="#1-4-工作方式：" class="headerlink" title="1.4 工作方式："></a>1.4 工作方式：</h2><p>资源子网 通信子网 接入网</p>
+<h2 id="1-5-计算机网络的性能："><a href="#1-5-计算机网络的性能：" class="headerlink" title="1.5 计算机网络的性能："></a>1.5 计算机网络的性能：</h2><p>速率：主机在数据信道上的传送数据位数的速率</p>
 <p>宽带：网卡最高支持的速率</p>
 <p>吞吐量：单位时间通过的所有信息量</p>
 <p>时延：发送时延 传播时延 处理时延 排队时延</p>
@@ -104,6 +104,44 @@
 <p>往返时间：从发送方发送数据开始，到接收方收到数据的时间</p>
 <p>利用率：信道利用率 = 有数据通过的时间/（（有+无）数据通过时间）</p>
 <p>​                网络利用率：信道利用率加权平均值</p>
+<h1 id="第二章-物理层"><a href="#第二章-物理层" class="headerlink" title="第二章 物理层"></a>第二章 物理层</h1><h2 id="2-1-物理层基本概念"><a href="#2-1-物理层基本概念" class="headerlink" title="2.1 物理层基本概念"></a>2.1 物理层基本概念</h2><p>物理层解决如何在连接各种计算机的传输媒体上传输数据比特流。</p>
+<p>物理层的主要任务描述为：确定与传输媒体的接口的一些特性</p>
+<h2 id="2-2-数据通信的基础知识"><a href="#2-2-数据通信的基础知识" class="headerlink" title="2.2 数据通信的基础知识"></a>2.2 数据通信的基础知识</h2><p>通信的目的是传送消息</p>
+<p>数据–运送消息的实体</p>
+<p>信号–数据的电气或电磁表现</p>
+<p>“模拟信号”–代表消息的参数取值是连续的</p>
+<p>“数字信号”–代表消息的参数的取值是离散的</p>
+<p>码元–在使用时间域的波形表示数字信号时，则代表不同离散数值的基本波形就成为码元。</p>
+<p>单工通信–单向的</p>
+<p>半双工通信–不能同时发或收消息（对讲机）</p>
+<p>全双工–通信的双方可同时发送或接受信息</p>
+<p>对基带信号的调制方法–调幅、调频和调相</p>
+<h2 id="2-3-奈氏准则"><a href="#2-3-奈氏准则" class="headerlink" title="2.3 奈氏准则"></a>2.3 奈氏准则</h2><p>在任何信道中，码源的传输速率是有上限的，否则就会出现码间串扰的问题。</p>
+<p>理想低通道的最高码元传输速率 = 2 WBaud</p>
+<p>​    W时理想低通信道的带宽，单位为HZ。</p>
+<p>​    Baud是波特，是码元传输速率单位。</p>
+<p>如果在有噪声的情况下，信道的信息极限传输速率 C 可表示为</p>
+<p>​    C = W log (1-S/N)  b/s</p>
+<p>​    W 为信道带宽</p>
+<p>​    S 为信道类内部所传信号的平均功率</p>
+<p>​    N 为信道内部的高斯噪声功率</p>
+<h2 id="2-4-物理层下面的传输媒体"><a href="#2-4-物理层下面的传输媒体" class="headerlink" title="2.4 物理层下面的传输媒体"></a>2.4 物理层下面的传输媒体</h2><p>短波通信主要靠电离层的反射，通信质量较差</p>
+<p>微波在空间主要是直线传播</p>
+<h2 id="2-5-信道复用技术"><a href="#2-5-信道复用技术" class="headerlink" title="2.5 信道复用技术"></a>2.5 信道复用技术</h2><p>频分复用–用户在分配到一定的频带之后，在通信过程中自始至终都占用这个频带。</p>
+<p>时分复用–</p>
+<p>码分复用–</p>
+<h2 id="2-6-数字传输系统"><a href="#2-6-数字传输系统" class="headerlink" title="2.6 数字传输系统"></a>2.6 数字传输系统</h2><h2 id="2-7-宽带接入技术"><a href="#2-7-宽带接入技术" class="headerlink" title="2.7 宽带接入技术"></a>2.7 宽带接入技术</h2><p>xDSL 技术把0-4kHz低频留给传统电话使用，把原来没有利用的高端频谱留给用户上网使用。</p>
+<p>光纤同轴混合网HFC：HFC网是在有线电视网 CATV 的基础上开发的一种居民宽带接入网。</p>
+<p>FTTx 技术：光纤到户</p>
+<p>光纤到家（FTTH）</p>
+<p>光纤到大楼（FTTB）</p>
+<p>光纤到路边（FTTC）</p>
+<h1 id="第三章-数据链路层"><a href="#第三章-数据链路层" class="headerlink" title="第三章 数据链路层"></a>第三章 数据链路层</h1><h2 id="1-数据链路层的一些基本概念"><a href="#1-数据链路层的一些基本概念" class="headerlink" title="1.数据链路层的一些基本概念"></a>1.数据链路层的一些基本概念</h2><h3 id="1-1-数据链路层使用的信道主要有以下两种类型："><a href="#1-1-数据链路层使用的信道主要有以下两种类型：" class="headerlink" title="1.1 数据链路层使用的信道主要有以下两种类型："></a>1.1 数据链路层使用的信道主要有以下两种类型：</h3><p>（1）点对点信道，（2）广播信道 </p>
+<h3 id="1-2-链路与数据链路："><a href="#1-2-链路与数据链路：" class="headerlink" title="1.2 链路与数据链路："></a>1.2 链路与数据链路：</h3><p>链路是一条点到点的物理线路段，中间没有任何其他的中断点。</p>
+<p>数据链路除了物理线路外，还必须有通信协议来控制这些数据的传输。若把实现这些协议的硬件和软件加到链路上，就构成了数据链路。</p>
+<h3 id="1-3-数据链路层需要解决的三个基本问题："><a href="#1-3-数据链路层需要解决的三个基本问题：" class="headerlink" title="1.3 数据链路层需要解决的三个基本问题："></a>1.3 数据链路层需要解决的三个基本问题：</h3><p>（1）封装成帧</p>
+<p>（2）透明传输</p>
+<p>（3）差错控制</p>
 
       </div>
     </div>
@@ -112,12 +150,12 @@
 <div class="lx-navigation">
 	<div class="lx-cover next lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/footer-l.min.jpeg)">
 		<div class="overlay"></div>
-		<a class="copy" href="#">
+		<a class="copy" href="/posts/28202/">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span>Next</span>
-						<h3>No newer post</h3>
+						<h3>Python 库</h3>
 					</div>
 				</div>
 			</div>
@@ -171,18 +209,18 @@
   </div>
   <nav class="menu-container">
   <ul class="menu-items">
-    <li><a href="/"><i class="fa fa-home fa-fw"></i>Home</a></li>
-    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+    <li><a href="/"><i class="fa fa-home fa-fw"></i>首页</a></li>
+    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>归档</a></li>
     
     <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-bookmark fa-fw"></i>Pages</span>
+      <i class="fa fa-bookmark fa-fw"></i>页面</span>
         <ul>
           <li><a href="/guestbook/">Guestbook</a></li>
         <li><a href="/about/">About</a></li>
         </ul>
     </li>
     <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-link fa-fw"></i>Friends</span>
+      <i class="fa fa-link fa-fw"></i>友链</span>
         <ul>
           <li> <a href="https://lx.js.org" target="_blank">Theme-Lx</a></li>
         </ul>

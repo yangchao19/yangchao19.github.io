@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content=#58b77a>
+  <title>MATLAB | blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="yang chao">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <script id="hexo-configurations">
+  var CONFIG = {
+    root: '/',
+    theme: 'lx',
+    version: '0.4.3',
+    localsearch:{
+      "enable": false,
+      "trigger": "auto",
+      "top_n_per_article": 1,
+      "unescape": false,
+      "preload": false
+      },
+    path: 'null'
+  };
+</script>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/css/main.min.css">
+  
+  <style type="text/css">
+    pre,
+    code {
+      font-family: 'Fira Code', monospace;
+    }
+    html {
+      font-family: sans-serif;
+    }
+    body {
+      font-family: sans-serif;
+    }
+    h1, h2, h3, h4, h5, figure {
+      font-family: sans-serif;
+    }
+    .menu-container{
+      font-family: sans-serif;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/js/jquery.jside.menu.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	$(".menu-container").jSideMenu({
+	    jSidePosition: "position-right",
+	    jSideSticky: true,
+	    jSideSkin: "",
+	     });
+	}); 
+	</script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+<meta name="generator" content="Hexo 6.0.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+</head>
+<body>
+<div class="single">
+
+<div id="page">
+<div class="header">
+  <div id="lx-aside" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/post_cover.min.jpeg)" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+      
+      <div class="page-title">
+        <div class="avatar"><a href="/"><img src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/avatar.min.jpeg" alt="yang chao"></a></div>
+        <span>2022-04-23</span>
+        <h2>MATLAB</h2>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="lx-main-content">
+  <div class="lx-post">
+    <div class="lx-entry padding">
+      <div>
+        <h1 id="1-矩阵的基本语法"><a href="#1-矩阵的基本语法" class="headerlink" title="1.矩阵的基本语法"></a>1.矩阵的基本语法</h1><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">A = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>;<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>] <span class="comment">%矩阵定义</span></span><br><span class="line">B = A'    				<span class="comment">%矩阵转置</span></span><br><span class="line">C = A(:) 				<span class="comment">%以列为顺序合并成一列</span></span><br><span class="line">D = inv(A)				<span class="comment">%对方阵求逆</span></span><br><span class="line">E = <span class="built_in">zeros</span>(x,y,z)		<span class="comment">%初始化 z 维（x，y）小大的矩阵，也就是 z 个（x,y） 大小的矩阵</span></span><br><span class="line">E = <span class="built_in">rand</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>rand、randi 和 randn 的区别</strong></p>
+<ol>
+<li><p>rand 生成均匀分布的伪随机数。分布在（0 ~1）之间</p>
+<p>主要语法：rand (m,n,’double’) 生成指定精度的m行n列的均匀分布的伪随机数</p>
+</li>
+<li><p>randn 生成标准正态分布的伪随机数(均值为0，方差为1)</p>
+<p>主要语法同上</p>
+</li>
+<li><p>randi 生成均匀分布的为随机整数</p>
+<p>主要语法：randi (imax) 在开区间 (0,imax) 生成均匀分布的伪随机整数</p>
+<p>​                    randi (imax,m,n) 在开区间 (0,imax) 生成随机矩阵</p>
+<p>​                    randi ([imin,imax],m,n) 在开区间 (imin,imax) 生成矩阵</p>
+</li>
+</ol>
+<h1 id="2-元胞数组"><a href="#2-元胞数组" class="headerlink" title="2.元胞数组"></a>2.元胞数组</h1><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%元胞数组</span></span><br><span class="line">A = cell(<span class="number">1</span>,<span class="number">6</span>)			<span class="comment">% A = [] [] [] [] [] [] 一行六列</span></span><br><span class="line">A{<span class="number">2</span>} = <span class="built_in">eye</span>(<span class="number">3</span>)			<span class="comment">% eye(3) 生成对角线为一的三维矩阵 matlab的索引从1开始</span></span><br><span class="line">A{<span class="number">5</span>} = <span class="built_in">magic</span>(<span class="number">5</span>)			<span class="comment">% magic(n)生成n阶幻方，把1~n^2排成n*n的矩阵，使每行、每列、主副对角线的n</span></span><br><span class="line">						<span class="comment">% 个数之和都相等</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="3-结构体"><a href="#3-结构体" class="headerlink" title="3.结构体"></a>3.结构体</h1><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%结构体</span></span><br><span class="line">books = struct(<span class="string">'name'</span>,{{<span class="string">'Machine Learning'</span>,<span class="string">'Data Miniig'</span>}},<span class="string">'price'</span>,[<span class="number">30</span>,<span class="number">40</span>]) <span class="comment">%类似于Python的字典</span></span><br><span class="line">books.name 				<span class="comment">% 'Machine Learning','Data Miniig'</span></span><br><span class="line">books.name(<span class="number">1</span>)			<span class="comment">% 'Machine Learning' 取出的是cell</span></span><br><span class="line">books.name{<span class="number">1</span>}			<span class="comment">% Machine Learning	取出的是字符串</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="4-MATLAB矩阵操作"><a href="#4-MATLAB矩阵操作" class="headerlink" title="4.MATLAB矩阵操作"></a>4.MATLAB矩阵操作</h1><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 1.矩阵的定义与构造</span></span><br><span class="line">A = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span>]</span><br><span class="line">B = <span class="number">1</span>:<span class="number">2</span>:<span class="number">9</span>				<span class="comment">% 1 3 5 7 9 </span></span><br><span class="line">C = <span class="built_in">repmat</span>(B,<span class="number">3</span>,<span class="number">2</span>)		<span class="comment">% 把B横着重复3次，竖着重复2次</span></span><br><span class="line">						<span class="comment">% 1 3 5 7 9 1 3 5 7 9 </span></span><br><span class="line">						<span class="comment">% 1 3 5 7 9 1 3 5 7 9 </span></span><br><span class="line">                        <span class="comment">% 1 3 5 7 9 1 3 5 7 9 </span></span><br><span class="line">D = <span class="built_in">ones</span>(<span class="number">3</span>,<span class="number">3</span>)			<span class="comment">% 1 1 1</span></span><br><span class="line">						<span class="comment">% 1 1 1</span></span><br><span class="line">						<span class="comment">% 1 1 1</span></span><br><span class="line"><span class="comment">% 2.矩阵的四则运算</span></span><br><span class="line">A = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span>;<span class="number">4</span> <span class="number">5</span> <span class="number">6</span>]</span><br><span class="line">B = [<span class="number">1</span> <span class="number">1</span> <span class="number">1</span>;<span class="number">1</span> <span class="number">1</span> <span class="number">1</span>]</span><br><span class="line">C = A + B</span><br><span class="line">D = A - B</span><br><span class="line">E = A * B'</span><br><span class="line">F = A. * B				<span class="comment">% 对应项相乘</span></span><br><span class="line">G = A / B				<span class="comment">% G 等于 A * pinv(B),A乘B的逆</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover next lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/footer-l.min.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/posts/30986/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3>Python小知识</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover prev lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/footer-r.min.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/posts/28202/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>Python 库</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+</div>
+<div class="comment"><div id="comments"></div></div>
+<footer>
+  <div>
+  Copyright &copy; 2022.<a href="/">blog</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.js.org" target="_blank">Lx</a><br>
+  </div>
+</footer>
+
+</div>
+
+<button class="hamburger hamburger--arrow-r" type="button" title="menu">
+    <div class="hamburger-box">
+      <div class="hamburger-inner"></div>
+    </div>
+</button>
+<div class="menu visibility">
+  <div class="menu-head">
+    <span class="layer">
+      <div class="col">
+        <div class="row for-pic">
+          <div class="profile-pic">
+            <a href="/"><img src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/avatar.min.jpeg" alt="yang chao"/></a>
+          </div>
+        </div>
+        <div class="row for-name">
+          <p>yang chao</p>
+          <span class="tagline">Hello, World!</span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <nav class="menu-container">
+  <ul class="menu-items">
+    <li><a href="/"><i class="fa fa-home fa-fw"></i>首页</a></li>
+    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+    
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-bookmark fa-fw"></i>页面</span>
+        <ul>
+          <li><a href="/guestbook/">Guestbook</a></li>
+        <li><a href="/about/">About</a></li>
+        </ul>
+    </li>
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-link fa-fw"></i>友链</span>
+        <ul>
+          <li> <a href="https://lx.js.org" target="_blank">Theme-Lx</a></li>
+        </ul>
+    </li>
+  </ul>
+  </nav>
+</div>
+
+<div class="gototop js-top">
+  <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/js/jquery.easing.min.js"></script>
+<script>
+(function () {
+	"use strict";
+	var goToTop = function() {
+		$(".js-gotop").on("click", function(event){
+			event.preventDefault();
+			$("html, body").animate({
+				scrollTop: $("html").offset().top
+			}, 500, "easeInOutExpo");
+			return false;
+		});
+		$(window).scroll(function(){
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$(".js-top").addClass("active");
+			} else {
+				$(".js-top").removeClass("active");
+			}
+		});
+	};
+	$(function(){
+		goToTop();
+	});
+}());
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.16/dist/Valine.min.js"></script>
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'CxxDHGBYoSnkvcbzpkHy8DuN-gzGzoHsz',
+    appKey: 'ouuYboaSJS0Gfnrzo4zNtlS3',
+    placeholder: 'Say something.',
+    avatar: 'identicon',
+    meta: guest,
+    pageSize: '10' || 10,
+    lang: 'zh-CN' || 'zh-cn'
+  });
+</script>
+
+</body>
+</html>

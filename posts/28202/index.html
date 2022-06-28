@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>机器学习学习笔记 | blog</title>
+  <title>Python 库 | blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="yang chao">
   <meta name="keywords" content="">
@@ -75,8 +75,8 @@
       
       <div class="page-title">
         <div class="avatar"><a href="/"><img src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/avatar.min.jpeg" alt="yang chao"></a></div>
-        <span>2022-02-28</span>
-        <h2>机器学习学习笔记</h2>
+        <span>2022-04-19</span>
+        <h2>Python 库</h2>
         
         
       </div>
@@ -87,22 +87,12 @@
   <div class="lx-post">
     <div class="lx-entry padding">
       <div>
-        <h1 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h1><p><strong>机器学习</strong>研究的主要内容是在计算机上从数据中产生“模型”的算法。即“学习算法”，通过学习算法，把数据提供给它，它能基于这些数据产生模型；在面对新的情况时，模型会给出判断。</p>
-<p><strong>泛化能力</strong>：学得模型适用于新样本的能力，称为“泛化能力”。</p>
-<p><strong>归纳</strong>和<strong>演绎</strong>：前者是从特殊到一般的“泛化”过程，即从具体事物归结出一般性规律；后者则是从一般到特殊的“特化”，即从基础原理推演出具体状况。</p>
-<p><strong>版本空间</strong>：可能有多个假设与训练集一致，即存在一个与训练集一致的“假设集合”，称之为“版本空间”。</p>
-<span id="more"></span>
+        <p><strong>numpy</strong></p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">np.mean(a, axis, dtype, out，keepdims )</span><br><span class="line">	a为m*n矩阵</span><br><span class="line">	axis 不设置值，对 m*n 个数求均值，返回一个实数</span><br><span class="line">	axis = <span class="number">0</span>：压缩行，对各列求均值，返回 <span class="number">1</span>* n 矩阵</span><br><span class="line">	axis = <span class="number">1</span>：压缩列，对各行求均值，返回 m *<span class="number">1</span> 矩阵</span><br><span class="line">np.std(a,axis,dype,out,keepdims)</span><br><span class="line">	axis = <span class="literal">None</span> 表示全局标准差</span><br><span class="line">	axis = <span class="number">0</span> 表示每一列标准差</span><br><span class="line">	axis = <span class="number">1</span> 表示每一行标准差</span><br><span class="line">[m,n] = np.shape(a）</span><br><span class="line">	返回矩阵的大小</span><br><span class="line">c = array([[<span class="number">1</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">1</span>,<span class="number">3</span>],[<span class="number">1</span>,<span class="number">4</span>]])  </span><br><span class="line">c.shape  </span><br><span class="line"><span class="comment">#(4, 2)  </span></span><br><span class="line">c.shape[<span class="number">0</span>]  </span><br><span class="line"><span class="comment">#4  </span></span><br><span class="line">c.shape[<span class="number">1</span>]  </span><br><span class="line"><span class="comment">#2</span></span><br><span class="line">                 </span><br><span class="line">a = np.zeros((m,n))</span><br><span class="line">	返回元素全为<span class="number">0</span>，大小为m*n的矩阵</span><br><span class="line">[a,b] = np.polyfit(x,y,deg)</span><br><span class="line">	y = a*x**deg+b 线性回归</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></tbody></table></figure>
 
-<p><strong>归纳偏好</strong>：机器学习算法在学习的过程中对某种类型假设的偏好，称为“归纳偏好”</p>
-<p><strong>NFL定理</strong>：总误差与学习算法无关。（前提是所有“问题”出现的机会相同、或所有问题同等重要。但实际情况并不是如此，要讨论算法的相对优劣，必须要针对具体的学习问题，学习算法自身归纳偏好与问题是否匹配，往往起到绝对作用）</p>
-<p><strong>机器学习分类</strong>：机械学习；示教学习；类比学习和归纳学习</p>
-<p><strong>机械学习</strong>：“死记硬背式学习“</p>
-<p><strong>归纳学习</strong>:从训练样本中归纳出学习结果。</p>
-<h1 id="第二章-模型评估与选择"><a href="#第二章-模型评估与选择" class="headerlink" title="第二章 模型评估与选择"></a>第二章 模型评估与选择</h1><p><strong>误差</strong>：一般把学习期的实际预测输出与样本的真实输出之间的差异称为“误差“。</p>
-<p><strong>训练误差/经验误差</strong>：学习器在训练集上的误差。</p>
-<p><strong>泛化误差</strong>：学习器在新样本上的误差。</p>
-<p><strong>过拟合</strong>：当学习器把训练样本学得“太好”了的时候，很可能已经把训练样本自身的一些特点当作了所有潜在样本都会具有的一般性质，这样就会导致泛化能力下降。这种现象在机器学习中称为“过拟合”。</p>
-<p><strong>欠拟合</strong>:与过拟合相反，这是指对训练样本的一般性质尚未学好。   </p>
+<p><strong>excel处理</strong></p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">读取excel文件：</span><br><span class="line">	<span class="keyword">import</span> xlrd</span><br><span class="line">	wb=xlrd.open_workbook(<span class="string">"filename"</span>)</span><br><span class="line">	Sheet1 = wb.sheet_by_name(sheetname)//获取book中单个sheet</span><br><span class="line">	heet_names = wb.sheet_names()//获取book对象中所有sheet</span><br><span class="line">	Rows = sheet1.nrows  //用于获取sheet 的列数（如<span class="number">3</span>列）</span><br><span class="line">	Cols = sheet1.ncols //用于获取sheet的行数（如<span class="number">2</span>行）</span><br><span class="line">	Value = sheet1.cell（row，col）.value //用于获取sheet中（row，col）单元格的值</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
 
       </div>
     </div>
@@ -111,12 +101,12 @@
 <div class="lx-navigation">
 	<div class="lx-cover next lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/footer-l.min.jpeg)">
 		<div class="overlay"></div>
-		<a class="copy" href="/posts/297a89d9/">
+		<a class="copy" href="/posts/21586/">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span>Next</span>
-						<h3>Python学...</h3>
+						<h3>MATLAB</h3>
 					</div>
 				</div>
 			</div>
@@ -124,12 +114,12 @@
 	</div>
         <div class="lx-cover prev lx-cover-sm" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.3/source/dist/images/footer-r.min.jpeg)">
 		<div class="overlay"></div>
-		<a class="copy" href="#">
+		<a class="copy" href="/posts/54366/">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span>Prev</span>
-						<h3>没有更早的文章</h3>
+						<h3>计网学习笔记</h3>
 					</div>
 				</div>
 			</div>

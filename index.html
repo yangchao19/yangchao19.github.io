@@ -87,18 +87,80 @@
 
   <div class="lx-entry padding">
     <div>
+      <h2 class="title"><a href="/posts/33893/">Mysql数据库</a></h2>
+      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2022-06-22</span>
+      <p></p>
+      <div class="post-button"><a class="btn" href="/posts/33893/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>阅读更多</a></div>
+    </div>
+  </div>
+  <div class="lx-entry padding">
+    <div>
+      <h2 class="title"><a href="/posts/30986/">Python小知识</a></h2>
+      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2022-06-06</span>
+      <p><h1 id="1-控制小数点后面几位"><a href="#1-控制小数点后面几位" class="headerlink" title="1.控制小数点后面几位"></a>1.控制小数点后面几位</h1><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">'%.2f'</span>%(accuracy * <span class="number">100</span>))<span class="comment">#小数点后保留两位</span></span><br></pre></td></tr></tbody></table></figure>
+
+</p>
+      <div class="post-button"><a class="btn" href="/posts/30986/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>阅读更多</a></div>
+    </div>
+  </div>
+  <div class="lx-entry padding">
+    <div>
+      <h2 class="title"><a href="/posts/21586/">MATLAB</a></h2>
+      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2022-04-23</span>
+      <p><h1 id="1-矩阵的基本语法"><a href="#1-矩阵的基本语法" class="headerlink" title="1.矩阵的基本语法"></a>1.矩阵的基本语法</h1><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">A = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>;<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>] <span class="comment">%矩阵定义</span></span><br><span class="line">B = A'    				<span class="comment">%矩阵转置</span></span><br><span class="line">C = A(:) 				<span class="comment">%以列为顺序合并成一列</span></span><br><span class="line">D = inv(A)				<span class="comment">%对方阵求逆</span></span><br><span class="line">E = <span class="built_in">zeros</span>(x,y,z)		<span class="comment">%初始化 z 维（x，y）小大的矩阵，也就是 z 个（x,y） 大小的矩阵</span></span><br><span class="line">E = <span class="built_in">rand</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>rand、randi 和 randn 的区别</strong></p>
+<ol>
+<li><p>rand 生成均匀分布的伪随机数。分布在（0 ~1）之间</p>
+<p>主要语法：rand (m,n,’double’) 生成指定精度的m行n列的均匀分布的伪随机数</p>
+</li>
+<li><p>randn 生成标准正态分布的伪随机数(均值为0，方差为1)</p>
+<p>主要语法同上</p>
+</li>
+<li><p>randi 生成均匀分布的为随机整数</p>
+<p>主要语法：randi (imax) 在开区间 (0,imax) 生成均匀分布的伪随机整数</p>
+<p>​                    randi (imax,m,n) 在开区间 (0,imax) 生成随机矩阵</p>
+<p>​                    randi ([imin,imax],m,n) 在开区间 (imin,imax) 生成矩阵</p>
+</li>
+</ol>
+<h1 id="2-元胞数组"><a href="#2-元胞数组" class="headerlink" title="2.元胞数组"></a>2.元胞数组</h1><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%元胞数组</span></span><br><span class="line">A = cell(<span class="number">1</span>,<span class="number">6</span>)			<span class="comment">% A = [] [] [] [] [] [] 一行六列</span></span><br><span class="line">A{<span class="number">2</span>} = <span class="built_in">eye</span>(<span class="number">3</span>)			<span class="comment">% eye(3) 生成对角线为一的三维矩阵 matlab的索引从1开始</span></span><br><span class="line">A{<span class="number">5</span>} = <span class="built_in">magic</span>(<span class="number">5</span>)			<span class="comment">% magic(n)生成n阶幻方，把1~n^2排成n*n的矩阵，使每行、每列、主副对角线的n</span></span><br><span class="line">						<span class="comment">% 个数之和都相等</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="3-结构体"><a href="#3-结构体" class="headerlink" title="3.结构体"></a>3.结构体</h1><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%结构体</span></span><br><span class="line">books = struct(<span class="string">'name'</span>,{{<span class="string">'Machine Learning'</span>,<span class="string">'Data Miniig'</span>}},<span class="string">'price'</span>,[<span class="number">30</span>,<span class="number">40</span>]) <span class="comment">%类似于Python的字典</span></span><br><span class="line">books.name 				<span class="comment">% 'Machine Learning','Data Miniig'</span></span><br><span class="line">books.name(<span class="number">1</span>)			<span class="comment">% 'Machine Learning' 取出的是cell</span></span><br><span class="line">books.name{<span class="number">1</span>}			<span class="comment">% Machine Learning	取出的是字符串</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="4-MATLAB矩阵操作"><a href="#4-MATLAB矩阵操作" class="headerlink" title="4.MATLAB矩阵操作"></a>4.MATLAB矩阵操作</h1><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 1.矩阵的定义与构造</span></span><br><span class="line">A = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span>]</span><br><span class="line">B = <span class="number">1</span>:<span class="number">2</span>:<span class="number">9</span>				<span class="comment">% 1 3 5 7 9 </span></span><br><span class="line">C = <span class="built_in">repmat</span>(B,<span class="number">3</span>,<span class="number">2</span>)		<span class="comment">% 把B横着重复3次，竖着重复2次</span></span><br><span class="line">						<span class="comment">% 1 3 5 7 9 1 3 5 7 9 </span></span><br><span class="line">						<span class="comment">% 1 3 5 7 9 1 3 5 7 9 </span></span><br><span class="line">                        <span class="comment">% 1 3 5 7 9 1 3 5 7 9 </span></span><br><span class="line">D = <span class="built_in">ones</span>(<span class="number">3</span>,<span class="number">3</span>)			<span class="comment">% 1 1 1</span></span><br><span class="line">						<span class="comment">% 1 1 1</span></span><br><span class="line">						<span class="comment">% 1 1 1</span></span><br><span class="line"><span class="comment">% 2.矩阵的四则运算</span></span><br><span class="line">A = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span>;<span class="number">4</span> <span class="number">5</span> <span class="number">6</span>]</span><br><span class="line">B = [<span class="number">1</span> <span class="number">1</span> <span class="number">1</span>;<span class="number">1</span> <span class="number">1</span> <span class="number">1</span>]</span><br><span class="line">C = A + B</span><br><span class="line">D = A - B</span><br><span class="line">E = A * B'</span><br><span class="line">F = A. * B				<span class="comment">% 对应项相乘</span></span><br><span class="line">G = A / B				<span class="comment">% G 等于 A * pinv(B),A乘B的逆</span></span><br></pre></td></tr></tbody></table></figure>
+
+</p>
+      <div class="post-button"><a class="btn" href="/posts/21586/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>阅读更多</a></div>
+    </div>
+  </div>
+  <div class="lx-entry padding">
+    <div>
+      <h2 class="title"><a href="/posts/28202/">Python 库</a></h2>
+      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2022-04-19</span>
+      <p><p><strong>numpy</strong></p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">np.mean(a, axis, dtype, out，keepdims )</span><br><span class="line">	a为m*n矩阵</span><br><span class="line">	axis 不设置值，对 m*n 个数求均值，返回一个实数</span><br><span class="line">	axis = <span class="number">0</span>：压缩行，对各列求均值，返回 <span class="number">1</span>* n 矩阵</span><br><span class="line">	axis = <span class="number">1</span>：压缩列，对各行求均值，返回 m *<span class="number">1</span> 矩阵</span><br><span class="line">np.std(a,axis,dype,out,keepdims)</span><br><span class="line">	axis = <span class="literal">None</span> 表示全局标准差</span><br><span class="line">	axis = <span class="number">0</span> 表示每一列标准差</span><br><span class="line">	axis = <span class="number">1</span> 表示每一行标准差</span><br><span class="line">[m,n] = np.shape(a）</span><br><span class="line">	返回矩阵的大小</span><br><span class="line">c = array([[<span class="number">1</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">1</span>,<span class="number">3</span>],[<span class="number">1</span>,<span class="number">4</span>]])  </span><br><span class="line">c.shape  </span><br><span class="line"><span class="comment">#(4, 2)  </span></span><br><span class="line">c.shape[<span class="number">0</span>]  </span><br><span class="line"><span class="comment">#4  </span></span><br><span class="line">c.shape[<span class="number">1</span>]  </span><br><span class="line"><span class="comment">#2</span></span><br><span class="line">                 </span><br><span class="line">a = np.zeros((m,n))</span><br><span class="line">	返回元素全为<span class="number">0</span>，大小为m*n的矩阵</span><br><span class="line">[a,b] = np.polyfit(x,y,deg)</span><br><span class="line">	y = a*x**deg+b 线性回归</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>excel处理</strong></p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">读取excel文件：</span><br><span class="line">	<span class="keyword">import</span> xlrd</span><br><span class="line">	wb=xlrd.open_workbook(<span class="string">"filename"</span>)</span><br><span class="line">	Sheet1 = wb.sheet_by_name(sheetname)//获取book中单个sheet</span><br><span class="line">	heet_names = wb.sheet_names()//获取book对象中所有sheet</span><br><span class="line">	Rows = sheet1.nrows  //用于获取sheet 的列数（如<span class="number">3</span>列）</span><br><span class="line">	Cols = sheet1.ncols //用于获取sheet的行数（如<span class="number">2</span>行）</span><br><span class="line">	Value = sheet1.cell（row，col）.value //用于获取sheet中（row，col）单元格的值</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+</p>
+      <div class="post-button"><a class="btn" href="/posts/28202/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>阅读更多</a></div>
+    </div>
+  </div>
+  <div class="lx-entry padding">
+    <div>
       <h2 class="title"><a href="/posts/54366/">计网学习笔记</a></h2>
       <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2022-03-05</span>
-      <p><h1 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h1><h2 id="数据交换方式："><a href="#数据交换方式：" class="headerlink" title="数据交换方式："></a>数据交换方式：</h2><p>1.电路交换（打电话）：申请，占用，释放</p>
+      <p><h1 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h1><h2 id="1-1-数据交换方式："><a href="#1-1-数据交换方式：" class="headerlink" title="1.1 数据交换方式："></a>1.1 数据交换方式：</h2><p>1.电路交换（打电话）：申请，占用，释放</p>
 <p>2.报文交换（不做分组）：交换时间长</p>
 <p>3.分组交换：(不占线)</p>
-<h2 id="作用范围："><a href="#作用范围：" class="headerlink" title="作用范围："></a>作用范围：</h2><p>1.广域网WAN：花钱买服务</p>
+<h2 id="1-2-作用范围："><a href="#1-2-作用范围：" class="headerlink" title="1.2 作用范围："></a>1.2 作用范围：</h2><p>1.广域网WAN：花钱买服务</p>
 <p>2.局域网LAN：自己买设备 自己维护 宽带固定 距离近</p>
 <p>3.城域网MAN</p>
 <p>4.个人区域PAN</p>
-<h2 id="拓扑结构："><a href="#拓扑结构：" class="headerlink" title="拓扑结构："></a>拓扑结构：</h2><p>总线型 环型 星型 树型 网状</p>
-<h2 id="工作方式："><a href="#工作方式：" class="headerlink" title="工作方式："></a>工作方式：</h2><p>资源子网 通信子网 接入网</p>
-<h2 id="计算机网络的性能："><a href="#计算机网络的性能：" class="headerlink" title="计算机网络的性能："></a>计算机网络的性能：</h2><p>速率：主机在数据信道上的传送数据位数的速率</p>
+<h2 id="1-3-拓扑结构："><a href="#1-3-拓扑结构：" class="headerlink" title="1.3 拓扑结构："></a>1.3 拓扑结构：</h2><p>总线型 环型 星型 树型 网状</p>
+<h2 id="1-4-工作方式："><a href="#1-4-工作方式：" class="headerlink" title="1.4 工作方式："></a>1.4 工作方式：</h2><p>资源子网 通信子网 接入网</p>
+<h2 id="1-5-计算机网络的性能："><a href="#1-5-计算机网络的性能：" class="headerlink" title="1.5 计算机网络的性能："></a>1.5 计算机网络的性能：</h2><p>速率：主机在数据信道上的传送数据位数的速率</p>
 <p>宽带：网卡最高支持的速率</p>
 <p>吞吐量：单位时间通过的所有信息量</p>
 <p>时延：发送时延 传播时延 处理时延 排队时延</p>
@@ -106,8 +168,46 @@
 <p>往返时间：从发送方发送数据开始，到接收方收到数据的时间</p>
 <p>利用率：信道利用率 = 有数据通过的时间/（（有+无）数据通过时间）</p>
 <p>​                网络利用率：信道利用率加权平均值</p>
+<h1 id="第二章-物理层"><a href="#第二章-物理层" class="headerlink" title="第二章 物理层"></a>第二章 物理层</h1><h2 id="2-1-物理层基本概念"><a href="#2-1-物理层基本概念" class="headerlink" title="2.1 物理层基本概念"></a>2.1 物理层基本概念</h2><p>物理层解决如何在连接各种计算机的传输媒体上传输数据比特流。</p>
+<p>物理层的主要任务描述为：确定与传输媒体的接口的一些特性</p>
+<h2 id="2-2-数据通信的基础知识"><a href="#2-2-数据通信的基础知识" class="headerlink" title="2.2 数据通信的基础知识"></a>2.2 数据通信的基础知识</h2><p>通信的目的是传送消息</p>
+<p>数据–运送消息的实体</p>
+<p>信号–数据的电气或电磁表现</p>
+<p>“模拟信号”–代表消息的参数取值是连续的</p>
+<p>“数字信号”–代表消息的参数的取值是离散的</p>
+<p>码元–在使用时间域的波形表示数字信号时，则代表不同离散数值的基本波形就成为码元。</p>
+<p>单工通信–单向的</p>
+<p>半双工通信–不能同时发或收消息（对讲机）</p>
+<p>全双工–通信的双方可同时发送或接受信息</p>
+<p>对基带信号的调制方法–调幅、调频和调相</p>
+<h2 id="2-3-奈氏准则"><a href="#2-3-奈氏准则" class="headerlink" title="2.3 奈氏准则"></a>2.3 奈氏准则</h2><p>在任何信道中，码源的传输速率是有上限的，否则就会出现码间串扰的问题。</p>
+<p>理想低通道的最高码元传输速率 = 2 WBaud</p>
+<p>​    W时理想低通信道的带宽，单位为HZ。</p>
+<p>​    Baud是波特，是码元传输速率单位。</p>
+<p>如果在有噪声的情况下，信道的信息极限传输速率 C 可表示为</p>
+<p>​    C = W log (1-S/N)  b/s</p>
+<p>​    W 为信道带宽</p>
+<p>​    S 为信道类内部所传信号的平均功率</p>
+<p>​    N 为信道内部的高斯噪声功率</p>
+<h2 id="2-4-物理层下面的传输媒体"><a href="#2-4-物理层下面的传输媒体" class="headerlink" title="2.4 物理层下面的传输媒体"></a>2.4 物理层下面的传输媒体</h2><p>短波通信主要靠电离层的反射，通信质量较差</p>
+<p>微波在空间主要是直线传播</p>
+<h2 id="2-5-信道复用技术"><a href="#2-5-信道复用技术" class="headerlink" title="2.5 信道复用技术"></a>2.5 信道复用技术</h2><p>频分复用–用户在分配到一定的频带之后，在通信过程中自始至终都占用这个频带。</p>
+<p>时分复用–</p>
+<p>码分复用–</p>
+<h2 id="2-6-数字传输系统"><a href="#2-6-数字传输系统" class="headerlink" title="2.6 数字传输系统"></a>2.6 数字传输系统</h2><h2 id="2-7-宽带接入技术"><a href="#2-7-宽带接入技术" class="headerlink" title="2.7 宽带接入技术"></a>2.7 宽带接入技术</h2><p>xDSL 技术把0-4kHz低频留给传统电话使用，把原来没有利用的高端频谱留给用户上网使用。</p>
+<p>光纤同轴混合网HFC：HFC网是在有线电视网 CATV 的基础上开发的一种居民宽带接入网。</p>
+<p>FTTx 技术：光纤到户</p>
+<p>光纤到家（FTTH）</p>
+<p>光纤到大楼（FTTB）</p>
+<p>光纤到路边（FTTC）</p>
+<h1 id="第三章-数据链路层"><a href="#第三章-数据链路层" class="headerlink" title="第三章 数据链路层"></a>第三章 数据链路层</h1><h2 id="1-数据链路层的一些基本概念"><a href="#1-数据链路层的一些基本概念" class="headerlink" title="1.数据链路层的一些基本概念"></a>1.数据链路层的一些基本概念</h2><h3 id="1-1-数据链路层使用的信道主要有以下两种类型："><a href="#1-1-数据链路层使用的信道主要有以下两种类型：" class="headerlink" title="1.1 数据链路层使用的信道主要有以下两种类型："></a>1.1 数据链路层使用的信道主要有以下两种类型：</h3><p>（1）点对点信道，（2）广播信道 </p>
+<h3 id="1-2-链路与数据链路："><a href="#1-2-链路与数据链路：" class="headerlink" title="1.2 链路与数据链路："></a>1.2 链路与数据链路：</h3><p>链路是一条点到点的物理线路段，中间没有任何其他的中断点。</p>
+<p>数据链路除了物理线路外，还必须有通信协议来控制这些数据的传输。若把实现这些协议的硬件和软件加到链路上，就构成了数据链路。</p>
+<h3 id="1-3-数据链路层需要解决的三个基本问题："><a href="#1-3-数据链路层需要解决的三个基本问题：" class="headerlink" title="1.3 数据链路层需要解决的三个基本问题："></a>1.3 数据链路层需要解决的三个基本问题：</h3><p>（1）封装成帧</p>
+<p>（2）透明传输</p>
+<p>（3）差错控制</p>
 </p>
-      <div class="post-button"><a class="btn" href="/posts/54366/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
+      <div class="post-button"><a class="btn" href="/posts/54366/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>阅读更多</a></div>
     </div>
   </div>
   <div class="lx-entry padding">
@@ -118,7 +218,7 @@
 
 <p>Python中首字母大写的名称指的是类。类中的函数称为方法。</p>
 <p>__init__是一个特殊的方法,每当你根据Dog创建新实力时，Python都会自动运行它。<br>为何必须在方法定义中包含形参 self ？<br>因为python调用这个方法创建Dog实例时，将自动传入实参self。<br>每个与实例相关的方法调用都自动传递实参self，它是一个指向实例本身的引用，让实例能够访问类中的属性和方法。<br>以 self 为前缀的变量可以供类中的所有方法使用。</p></p>
-      <div class="post-button"><a class="btn" href="/posts/297a89d9/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
+      <div class="post-button"><a class="btn" href="/posts/297a89d9/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>阅读更多</a></div>
     </div>
   </div>
   <div class="lx-entry padding">
@@ -129,7 +229,7 @@
 <p><strong>泛化能力</strong>：学得模型适用于新样本的能力，称为“泛化能力”。</p>
 <p><strong>归纳</strong>和<strong>演绎</strong>：前者是从特殊到一般的“泛化”过程，即从具体事物归结出一般性规律；后者则是从一般到特殊的“特化”，即从基础原理推演出具体状况。</p>
 <p><strong>版本空间</strong>：可能有多个假设与训练集一致，即存在一个与训练集一致的“假设集合”，称之为“版本空间”。</p></p>
-      <div class="post-button"><a class="btn" href="/posts/3897350f/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
+      <div class="post-button"><a class="btn" href="/posts/3897350f/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>阅读更多</a></div>
     </div>
   </div>
 
@@ -169,18 +269,18 @@
   </div>
   <nav class="menu-container">
   <ul class="menu-items">
-    <li><a href="/"><i class="fa fa-home fa-fw"></i>Home</a></li>
-    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+    <li><a href="/"><i class="fa fa-home fa-fw"></i>首页</a></li>
+    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>归档</a></li>
     
     <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-bookmark fa-fw"></i>Pages</span>
+      <i class="fa fa-bookmark fa-fw"></i>页面</span>
         <ul>
           <li><a href="/guestbook/">Guestbook</a></li>
         <li><a href="/about/">About</a></li>
         </ul>
     </li>
     <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-link fa-fw"></i>Friends</span>
+      <i class="fa fa-link fa-fw"></i>友链</span>
         <ul>
           <li> <a href="https://lx.js.org" target="_blank">Theme-Lx</a></li>
         </ul>

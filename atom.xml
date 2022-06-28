@@ -6,7 +6,7 @@
   <link href="http://tomotoes.com/atom.xml" rel="self"/>
   
   <link href="http://tomotoes.com/"/>
-  <updated>2022-03-08T03:01:37.851Z</updated>
+  <updated>2022-06-22T07:30:53.703Z</updated>
   <id>http://tomotoes.com/</id>
   
   <author>
@@ -17,18 +17,95 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mysql数据库</title>
+    <link href="http://tomotoes.com/posts/33893/"/>
+    <id>http://tomotoes.com/posts/33893/</id>
+    <published>2022-06-22T07:30:53.000Z</published>
+    <updated>2022-06-22T07:30:53.703Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python小知识</title>
+    <link href="http://tomotoes.com/posts/30986/"/>
+    <id>http://tomotoes.com/posts/30986/</id>
+    <published>2022-06-06T11:32:30.000Z</published>
+    <updated>2022-06-06T11:35:01.466Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-控制小数点后面几位&quot;&gt;&lt;a href=&quot;#1-控制小数点后面几位&quot; class=&quot;headerlink&quot; title=&quot;1.控制小数点后面几位&quot;&gt;&lt;/a&gt;1.控制小数点后面几位&lt;/h1&gt;&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MATLAB</title>
+    <link href="http://tomotoes.com/posts/21586/"/>
+    <id>http://tomotoes.com/posts/21586/</id>
+    <published>2022-04-23T02:49:01.000Z</published>
+    <updated>2022-04-24T03:15:03.422Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-矩阵的基本语法&quot;&gt;&lt;a href=&quot;#1-矩阵的基本语法&quot; class=&quot;headerlink&quot; title=&quot;1.矩阵的基本语法&quot;&gt;&lt;/a&gt;1.矩阵的基本语法&lt;/h1&gt;&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python 库</title>
+    <link href="http://tomotoes.com/posts/28202/"/>
+    <id>http://tomotoes.com/posts/28202/</id>
+    <published>2022-04-19T02:38:16.000Z</published>
+    <updated>2022-06-06T11:53:55.041Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;numpy&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>计网学习笔记</title>
     <link href="http://tomotoes.com/posts/54366/"/>
     <id>http://tomotoes.com/posts/54366/</id>
     <published>2022-03-05T00:41:13.000Z</published>
-    <updated>2022-03-08T03:01:37.851Z</updated>
+    <updated>2022-06-22T03:13:45.691Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;第一章-概述&quot;&gt;&lt;a href=&quot;#第一章-概述&quot; class=&quot;headerlink&quot; title=&quot;第一章 概述&quot;&gt;&lt;/a&gt;第一章 概述&lt;/h1&gt;&lt;h2 id=&quot;数据交换方式：&quot;&gt;&lt;a href=&quot;#数据交换方式：&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;第一章-概述&quot;&gt;&lt;a href=&quot;#第一章-概述&quot; class=&quot;headerlink&quot; title=&quot;第一章 概述&quot;&gt;&lt;/a&gt;第一章 概述&lt;/h1&gt;&lt;h2 id=&quot;1-1-数据交换方式：&quot;&gt;&lt;a href=&quot;#1-1-数据交换方式：&quot;</summary>
         
       
     
